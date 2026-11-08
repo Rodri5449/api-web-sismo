@@ -6,9 +6,11 @@ provider:
   runtime: python3.12
   # Default memory size for functions (default: 1024MB)
   memorySize: 1024
-  timeout: 30
+  timeout: 29
   iam:
     role: arn:aws:iam::206242151142:role/LabRole
+  environment:
+    TABLE_NAME: TablaSismosIGP
 
 functions:
   scrape_sismos:
